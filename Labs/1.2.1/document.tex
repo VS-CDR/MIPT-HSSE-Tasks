@@ -1,23 +1,26 @@
-\documentclass[a4paper, 12pt]{article}
-\usepackage[a4paper,top=0.4cm, bottom=1.5cm, left=1.6cm, right=1.6cm]{geometry}
+\documentclass[
+	a4paper, % Paper size, use either a4paper or letterpaper
+	12pt, % Default font size, the template is designed to look good at 12pt so it's best not to change this
+	%unnumberedsections, % Uncomment for no section numbering
+]{article}
+\usepackage[a4paper,top=0.4cm, bottom=1.6cm, left=1.6cm, right=1.6cm]{geometry}
 
-\usepackage{cmap}
-%\usepackage[T2A]{fontenc}
+\usepackage{cmap} % make PDF files searchable and copy-able
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
 
 \usepackage{amssymb,amsmath}
+\renewcommand {\phi}{\varphi}
 \usepackage{mathtext}
 
 \usepackage{libertine}
 \usepackage[libertine]{newtxmath}
 
 \usepackage{graphicx} % Required for inserting images
-\graphicspath{{./img/}}
+\graphicspath{{./img/}} % Destination of images
 \usepackage{subcaption}
 
 \usepackage{hyperref}
-
 
 
 
@@ -29,12 +32,10 @@
 \begin{document}    
 	
 	\maketitle
-	% \chapter{Введение}
 	
 	\section{Аннотация}
 	В работе определяется скорость полета пули, путём применения законов сохранения и использования баллистического маятника. Используется следующий метод измерений скорости: 1) определение отклонения маятника с помощью оптической системы, изображенной на рис. \ref{fig:subim1} Геометрические размеры образца измеряются с помощью линейки, штангенциркуля и микрометра. Детально исследуется систематические и случайные погрешности проводимых измерений.
 	
-	% \chapter{Теоретические сведения}
 	
 	\section{Теоретические сведения}
 	
@@ -58,11 +59,11 @@
 	\end{equation}
 	Здесь g - ускорение свободного падения, h - высота подъёма маятника над его начальным положением.
 	
-	Высота подъёма маятника выражается через угол $\varphi$ отклонения маятника от вертикали:
+	Высота подъёма маятника выражается через угол $\phi$ отклонения маятника от вертикали:
 	\begin{equation}
-		h = L(1 - \cos{\varphi}) = 2L\sin^2{\frac{\varphi}{2}},
+		h = L(1 - \cos{\phi}) = 2L\sin^2{\frac{\phi}{2}},
 	\end{equation}
-	где $\varphi$ $\approx$ $\frac{\Delta x}{L}$
+	где $\phi$ $\approx$ $\frac{\Delta x}{L}$
 	
 	Из (2), (3) и (4) получаем формулу для определения скорости пули:
 	\begin{equation}
