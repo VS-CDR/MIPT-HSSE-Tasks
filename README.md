@@ -1,4 +1,4 @@
-# MIPT-HSSE-Labs
+# MIPT-HSSE-Tasks
 
 MIPT HSSE "Digitalization of physical processes" laboratory works and programs.
 
