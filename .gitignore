@@ -459,3 +459,4 @@ TSWLatexianTemp*
 # End of https://www.toptal.com/developers/gitignore/api/latex,tex
 
 !Labs/1.2.1/
+!Labs/1.1.7/
