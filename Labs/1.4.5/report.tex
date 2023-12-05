@@ -69,11 +69,14 @@ a4paper, % Paper size, use either a4paper or letterpaper
 	\begin{equation}
 		\delta m \frac{\partial^2 y}{\partial t^2}= -T_1 \sin{\alpha_1} + T_2\sin{\alpha_2}
 	\end{equation}
-	Так как амплитуда колебаний невелика, то можно пренебречь добавочным напряжением, возникающим из-за \textit{удлинения} элементов струны и считать силу $T$ натяжения нити постоянной по модулю. Также можно считать углы отклонения $\alpha$ струны от оси $x$ малыми, поэтому $\tg{\alpha} \approx \sin{\alpha} \approx \alpha$.
+	Так как амплитуда колебаний невелика, то можно пренебречь добавочным напряжением, возникающим из-за \textit{удлинения} элементов струны и считать силу $T$ натяжения нити постоянной по модулю. Также можно считать углы отклонения $\alpha$ струны от оси $x$ малыми, поэтому $\tg{\alpha} \approx \sin{\alpha} \approx \alpha \approx \frac{\partial y}{\partial x}$.
 	
 	Устремим $\delta x$ к нулю и найдем окончательно \textit{уравнение свободных малых поперечных колебаний струны:}
 	\begin{equation}
-		\rho_l \frac{\partial^2 y}{\partial{t^2}} \approx T\frac{\partial{\alpha}}{x} = u^2\frac{\partial^2 y}{\partial{t^2}}, \quad \left(u = \sqrt{\frac{T}{\rho}}\right)
+		\rho_l \frac{\partial^2 y}{\partial{t^2}} =
+		\frac{T_1 \sin{\alpha_1} - T_2\sin{\alpha_2}}{\delta xx}
+		\approx T\frac{\partial{\alpha}}{\partial x} =
+		u^2\frac{\partial^2 y}{\partial{x^2}}, \quad \left(u = \sqrt{\frac{T}{\rho}}\right)
 	\end{equation}
 	
 	\begin{equation}\label{wave}
@@ -273,11 +276,11 @@ a4paper, % Paper size, use either a4paper or letterpaper
 	\[u = 2kL \]
 	
 	\begin{equation}
-		k=\frac{\langle n\nu\rangle-\langle n\rangle \langle \nu\rangle}{\langle n^2\rangle - \langle n\rangle^2},
+		k=\frac{\langle n\nu\rangle-\langle n\rangle \langle \nu\rangle}{\langle n^2\rangle - \langle n\rangle^2}
 	\end{equation}
 	
 	\begin{equation}
-		\sigma_k^\text{случ}=\frac{1}{\sqrt{N}}\sqrt{\frac{\langle \nu^2 \rangle - \langle \nu \rangle^2}{\langle n^2 \rangle - \langle n \rangle^2} - k^2  },
+		\sigma_k^\text{случ}=\frac{1}{\sqrt{N}}\sqrt{\frac{\langle \nu^2 \rangle - \langle \nu \rangle^2}{\langle n^2 \rangle - \langle n \rangle^2} - k^2  }
 	\end{equation}
 	
 	\begin{equation}
@@ -308,9 +311,9 @@ a4paper, % Paper size, use either a4paper or letterpaper
 	Средняя относительная погрешность измерения скорости распространения колебаний $\varepsilon_u \approx 1,3\% $. Полученные значения скорости:
 	
 	\begin{itemize}
-		\item $T = 8,2$ Н  $\quad u = (130,1 \pm 2,2)$, м/с
-		\item  $T = 13,0$ Н  $\quad u = (160,1 \pm 2,1)$, м/с
-		\item  $T = 17,8$ Н  $\quad u = (186,1 \pm 1,9)$, м/с
+		\item $T = 8,2$ Н  $\quad u = 130,1 \pm 2,2$ $\frac{\text{м}}{\text{с}}$
+		\item  $T = 13,0$ Н  $\quad u = 160,1 \pm 2,1$ $\frac{\text{м}}{\text{с}}$
+		\item  $T = 17,8$ Н  $\quad u = 186,1 \pm 1,9$ $\frac{\text{м}}{\text{с}}$
 	\end{itemize}
 	
 	С помощью полученных данных построим график зависимости $u^2(T)$, для того, чтобы найти погонную плотность струны $ \rho_l $.
@@ -328,19 +331,19 @@ a4paper, % Paper size, use either a4paper or letterpaper
 	График был построен по МНК, а значит $k$ и его погрешность можно найти по формулам:
 	
 	\begin{equation}
-		k=\frac{\langle Tu^2\rangle-\langle T\rangle \langle u^2\rangle}{\langle T^2\rangle - \langle T\rangle^2} \approx 1811.5 \text{, $\dfrac{\text{м}}{\text{кг}}$},
+		k=\frac{\langle Tu^2\rangle-\langle T\rangle \langle u^2\rangle}{\langle T^2\rangle - \langle T\rangle^2} \approx 1811.5 \left(\dfrac{\text{м}}{\text{кг}}\right)
 	\end{equation}
 	
 	\begin{equation}
-		\sigma_k^\text{случ}=\frac{1}{\sqrt{N}}\sqrt{\frac{\langle u^4 \rangle - \langle u^2 \rangle^2}{\langle T^2 \rangle - \langle T \rangle^2} - k^2  } \approx 17.8 \text{, $\dfrac{\text{м}}{\text{кг}}$},
+		\sigma_k^\text{случ}=\frac{1}{\sqrt{N}}\sqrt{\frac{\langle u^4 \rangle - \langle u^2 \rangle^2}{\langle T^2 \rangle - \langle T \rangle^2} - k^2  } \approx 17.8 \left(\dfrac{\text{м}}{\text{кг}}\right)
 	\end{equation}
 	
 	\begin{equation}
-		\sigma_k^{\text{сист}} = \sqrt{ \varepsilon_{u^2}^2 + \varepsilon_T^2 } \approx 40,2\text{, $\dfrac{\text{м}}{\text{кг}}$},
+		\sigma_k^{\text{сист}} = \sqrt{ \varepsilon_{u^2}^2 + \varepsilon_T^2 } \approx 40,2 \left(\dfrac{\text{м}}{\text{кг}}\right)
 	\end{equation}
 	
 	\begin{equation}
-		\sigma_k = \sqrt{\sigma_\text{случ}^2 + \sigma_\text{сист}^2} \approx 44,0 \text{, $\dfrac{\text{м}}{\text{кг}}$},
+		\sigma_k = \sqrt{\sigma_\text{случ}^2 + \sigma_\text{сист}^2} \approx 44,0 \left(\dfrac{\text{м}}{\text{кг}}\right)
 	\end{equation}
 	
 	Таким образом $k = 1811.5 \pm 44,0 \left({ \dfrac{\text{м}}{\text{кг}}}\right) $.
